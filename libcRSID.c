@@ -14,7 +14,7 @@ cRSID_C64instance cRSID_C64;
 cRSID_C64instance* cRSID_init (unsigned short samplerate) {
  static cRSID_C64instance* C64 = &cRSID_C64;
 
- C64->HighQualitySID=1; C64->Stereo=0; C64->SelectedSIDmodel=0; C64->PlaybackSpeed=1; //default model and mode selections
+ C64->HighQualitySID=0; C64->Stereo=0; C64->SelectedSIDmodel=0; C64->PlaybackSpeed=1; //default model and mode selections
  C64->MainVolume=255;
 
  C64 = cRSID_createC64 (C64, samplerate);
